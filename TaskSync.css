@@ -1,0 +1,117 @@
+
+ body
+  {
+    font-family: Roboto, sans-serif;
+    padding: 50px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(226, 206, 206) 40%, rgb(112, 211, 112) 60%);
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+ /* css styling for the logo, header text, and the TaskSyncPro Description */
+  .header
+  {
+    display: grid;
+
+  }
+
+   .header-text
+  {
+   padding-top: 60px;
+  }
+
+  @media (max-width:540px) {
+    .header-text
+    {
+      padding-top: 0px;
+      text-align: center;
+    }
+  
+    .logo
+    {
+      padding: 10px;
+    }
+  }
+
+  .general-name
+  {
+    font-size: 30px;
+    color: rgb(48, 160, 201);
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .description
+  {
+    color: rgb(90, 72, 88);
+    font-size: 20px;
+  }
+
+
+/* css styling for the task section */
+  .To-do-list
+  {
+    display: grid;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .task-name
+  {
+    border-radius: 5px;
+    margin-bottom: 1%;
+  }
+  .task-name .date .time
+  {
+    background-color: rgb(112, 211, 112);
+  }
+
+  .task-text
+  {
+    color: rgb(48, 160, 201);
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .tasks
+  {
+    margin-top: 20px;
+    text-align: center;
+    
+    
+  }
+
+  .task-list
+  {
+    margin-right: 15px;
+  }
+  span
+  {
+    font-size: 20px;
+    padding-right: 20px;
+  
+  }
+  
+  .todo{
+    margin-bottom: 15px;
+    display: grid;
+  }
+
+  
+  
+  

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskSync Pro</title>
+    <link rel="stylesheet" href="TaskSync.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  
+</head>
+<body  class="container">
+    <main>
+    <section class="header row">
+        <div class="logo col-lg-6 col-sm-12">
+            <img src="images/Tasksync pro (1).png" alt="Logo" height ="250px">
+        </div>
+        <div class="header-text col-lg-6 col-sm-12">
+            <h1 class="general-name">
+                TaskSync Pro
+            </h2>
+            <div class ="description">
+                Streamline Your Workflow with Effortless Task Management.
+                Efficiency meets simplicity with TaskSync Pro, the ultimate solution for managing your tasks seamlessly.
+                 Say goodbye to scattered to-do lists and hello to streamlined productivity.
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="To-do-list">
+            <div class="row">
+                <div class="col" >
+                    <input type="text" placeholder="Enter a task" class="task-name form-control" id='task-name' aria-label=".form-control-lg example" required onkeydown="keyPressHandler(event); " >
+                </div>
+            </div>
+            <div class="row">
+                <div class="date col-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="date">Date: </label>
+                        </div>
+                        <div class="col-8">
+                            <input type="date" id='date' class="date form-control" required onkeydown="keyPressHandler(event); ">
+                        </div>
+                    </div>
+                </div>
+                <div class="time col-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="time">Time: </label>
+                        </div>
+                        <div class="col-8">
+                            <input type="time" class="time form-control" id ='time' required onkeydown="keyPressHandler(event); ">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="add col-2">
+                    <button onclick="
+                        addTask();
+                        "
+                        class="add btn btn-success">
+                        Add
+                    </button>
+                </div>
+            
+            </div>
+            
+    </section>
+
+    <section class ="tasks">
+        <h1 class="task-text">
+            TO-DO-LIST
+        </h1>
+
+        <div class="task-list">
+           
+        </div>
+    </section>
+</main>
+<script src="TaskSync.js"></script>
+</body>
+</html>
